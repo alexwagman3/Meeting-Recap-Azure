@@ -11,11 +11,11 @@
     
     <!-- Header Banner -->
     <tr>
-        <td style="background: #0E0A2E; border-radius: 8px; overflow: hidden;">
-            <!-- Top Gradient Bar -->
+        <td bgcolor="#0E0A2E" style="background-color: #0E0A2E; border-radius: 8px; overflow: hidden;">
+            <!-- Top Bar (solid color — Outlook ignores CSS gradients) -->
             <table cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
-                    <td style="height: 5px; background: linear-gradient(90deg, #F96702 0%, #0078D4 50%, #F96702 100%);"></td>
+                    <td height="5" bgcolor="#F96702" style="height: 5px; line-height: 5px; font-size: 0; background-color: #F96702;">&nbsp;</td>
                 </tr>
             </table>
             <!-- Header Content -->
@@ -29,11 +29,11 @@
                                     <table cellpadding="0" cellspacing="4" border="0">
                                         <tr>
                                             <td style="vertical-align: middle;">
-                                                <img src="https://awagman.github.io/Meeting-Recap/Cloudera_logo.svg" alt="Cloudera" height="22" style="display:block;">
+                                                <img src="https://awagman.github.io/Meeting-Recap/Cloudera_logo.png" alt="Cloudera" height="22" style="display:block;">
                                             </td>
                                             <td style="padding: 0 14px; color: #ffffff; font-size: 22px; font-weight: 300; vertical-align: middle;">+</td>
                                             <td style="vertical-align: middle;">
-                                                <img src="https://awagman.github.io/Meeting-Recap/Azure_Logo.svg" alt="Microsoft Azure" height="28" style="display:block; vertical-align:middle;">
+                                                <img src="https://awagman.github.io/Meeting-Recap/Azure_Logo.png" alt="Microsoft Azure" height="28" style="display:block; vertical-align:middle;">
                                             </td>
                                             <td style="padding-left: 10px; font-size: 16px; color: #ffffff; font-weight: 500; font-family: Arial, sans-serif; vertical-align: middle;">Microsoft Azure</td>
                                         </tr>
@@ -53,17 +53,22 @@
     </tr>
 
     <!-- Spacer -->
-    <tr><td style="height: 24px;"></td></tr>
+    <tr><td style="height: 24px; line-height: 24px; font-size: 0;">&nbsp;</td></tr>
 
     <!-- Content Section -->
     <tr>
-        <td style="background-color: #ffffff; border-radius: 8px; padding: 32px 36px; border: 1px solid #e0e0e0;">
+        <td bgcolor="#ffffff" style="background-color: #ffffff; border-radius: 8px; padding: 32px 36px; border: 1px solid #e0e0e0;">
             
             <!-- Cloudera Team Section -->
-            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 28px;">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                     <td>
-                        <div style="font-size: 14px; font-weight: bold; color: #F96702; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px; border-bottom: 3px solid #F96702; padding-bottom: 8px; display: inline-block;">Cloudera Team</div>
+                        <!-- Header underline constrained via nested table (Outlook ignores display:inline-block) -->
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td style="font-size: 14px; font-weight: bold; color: #F96702; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 3px solid #F96702; padding-bottom: 8px;">Cloudera Team</td>
+                            </tr>
+                        </table>
                         <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 12px;">
                             <tr>
                                 <td style="padding: 8px 0; font-size: 15px; color: #222;">
@@ -81,11 +86,18 @@
                 </tr>
             </table>
 
+            <!-- Section Spacer -->
+            <table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td height="28" style="height: 28px; line-height: 28px; font-size: 0;">&nbsp;</td></tr></table>
+
             <!-- Why This Matters to Microsoft Section -->
-            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 28px;">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                     <td>
-                        <div style="font-size: 14px; font-weight: bold; color: #0078D4; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px; border-bottom: 3px solid #0078D4; padding-bottom: 8px; display: inline-block;">Why This Matters to Microsoft</div>
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td style="font-size: 14px; font-weight: bold; color: #0078D4; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 3px solid #0078D4; padding-bottom: 8px;">Why This Matters to Microsoft</td>
+                            </tr>
+                        </table>
                         <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 12px;">
                             <tr>
                                 <td style="padding: 6px 0 6px 16px; font-size: 15px; color: #222;">&#8226; Incentivized to move on-prem Cloudera workloads to Azure</td>
@@ -104,10 +116,13 @@
                 </tr>
             </table>
 
+            <!-- Section Spacer -->
+            <table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td height="28" style="height: 28px; line-height: 28px; font-size: 0;">&nbsp;</td></tr></table>
+
             <!-- Cloudera in Plain English Section -->
-            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 28px; background-color: #e8f0fb; border-radius: 8px; border-left: 4px solid #F96702;">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#e8f0fb" style="background-color: #e8f0fb; border-radius: 8px; border-left: 4px solid #F96702;">
                 <tr>
-                    <td style="padding: 24px;">
+                    <td bgcolor="#e8f0fb" style="background-color: #e8f0fb; padding: 24px;">
                         <div style="font-size: 14px; font-weight: bold; color: #222; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px;">Cloudera in Plain English</div>
                         <p style="font-size: 15px; color: #222; margin: 0 0 16px 0; line-height: 1.6;">Open-source, hybrid data platform spanning the full data lifecycle.</p>
                         <p style="font-size: 15px; color: #222; margin: 0 0 10px 0; font-weight: bold;">Universal data translator across:</p>
@@ -121,11 +136,18 @@
                 </tr>
             </table>
 
+            <!-- Section Spacer -->
+            <table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td height="28" style="height: 28px; line-height: 28px; font-size: 0;">&nbsp;</td></tr></table>
+
             <!-- What This Unlocks Section -->
-            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 28px;">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                     <td>
-                        <div style="font-size: 14px; font-weight: bold; color: #222; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px; border-bottom: 3px solid #333; padding-bottom: 8px; display: inline-block;">What This Unlocks</div>
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td style="font-size: 14px; font-weight: bold; color: #222; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 3px solid #333; padding-bottom: 8px;">What This Unlocks</td>
+                            </tr>
+                        </table>
                         <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 12px;">
                             <tr><td style="padding: 6px 0 6px 16px; font-size: 15px; color: #222;">&#8226; Access to legacy &amp; on-prem data</td></tr>
                             <tr><td style="padding: 6px 0 6px 16px; font-size: 15px; color: #222;">&#8226; Seamless data movement into Azure</td></tr>
@@ -136,8 +158,11 @@
                 </tr>
             </table>
 
+            <!-- Section Spacer -->
+            <table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td height="28" style="height: 28px; line-height: 28px; font-size: 0;">&nbsp;</td></tr></table>
+
             <!-- References Section -->
-            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 28px;">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                     <td>
                         <div style="font-size: 14px; font-weight: bold; color: #555; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px;">References</div>
@@ -157,10 +182,13 @@
                 </tr>
             </table>
 
+            <!-- Section Spacer -->
+            <table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td height="28" style="height: 28px; line-height: 28px; font-size: 0;">&nbsp;</td></tr></table>
+
             <!-- Next Steps Section -->
-            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #0E0A2E; border-radius: 8px;">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#0E0A2E" style="background-color: #0E0A2E; border-radius: 8px;">
                 <tr>
-                    <td style="padding: 24px 28px;">
+                    <td bgcolor="#0E0A2E" style="background-color: #0E0A2E; padding: 24px 28px;">
                         <div style="font-size: 14px; font-weight: bold; color: #F96702; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px;">Next Steps</div>
                         <table cellpadding="0" cellspacing="0" border="0">
                             <tr><td style="padding: 6px 0 6px 16px; font-size: 15px; color: #ffffff;">&#8226; AT&amp;T co-sell / roadmap workshop</td></tr>
